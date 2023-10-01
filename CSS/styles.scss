@@ -1,0 +1,84 @@
+/*Définition des couleurs*/
+
+$primary-color: #011932;
+$secondary-color: #C0EEFF;
+$button-color: #FFE0BF;
+$accentued-color: #FA6902;
+
+/*Définition de la typographie*/
+
+$title-font: 'Dela Gothic One', cursive;
+$text-font: 'Roboto Condensed', sans-serif;
+
+/*Création du button*/
+
+@mixin button-style {
+    display: flex;
+    width: 159px;
+    height: 46px;
+    padding: 15px 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 2px solid #FFE0BF;
+    background: #011932;
+
+&:hover {
+    display: flex;
+    width: 159px;
+    height: 46px;
+    padding: 15px 25px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FFE0BF;
+    box-shadow: 0px 3px 12px 0px rgba(255, 224, 191, 0.20);
+    }
+}
+
+@media (max-width:900px) {
+    body {
+        background-color: $primary-color;
+        margin-top: 60px;
+        margin-left: 25px;
+    }
+
+    h1 {
+        font-family: $title-font;
+        font-weight: 400;
+        color: $secondary-color;
+    }
+
+    p {
+        font-family: $text-font;
+        color: $secondary-color;
+    }
+
+    #header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container1 {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10%;
+        margin-top: 5%;
+    }
+
+    .text > h1 {
+        margin: 0;
+    }
+
+    .image-turtle {
+        background: url(./assets/turtleimg.svg), lightgray 50% / cover no-repeat;
+        width: 68px;
+        height: 115px;
+    }
+
+}
