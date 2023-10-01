@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/*Définition des couleurs*/
+/*Définition de la typographie*/
+/*Création du button*/
+@media (max-width: 900px) {
+  body {
+    background-color: #011932;
+    margin-top: 60px;
+    margin-left: 25px;
+  }
+  h1 {
+    font-family: "Dela Gothic One", cursive;
+    font-weight: 400;
+    color: #C0EEFF;
+  }
+  p {
+    font-family: "Roboto Condensed", sans-serif;
+    color: #C0EEFF;
+  }
+  #header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10%;
+    margin-top: 5%;
+  }
+  .text > h1 {
+    margin: 0;
+  }
+  .image-turtle {
+    background: url(./assets/turtleimg.svg), lightgray 50%/cover no-repeat;
+    width: 68px;
+    height: 115px;
+  }
+}/*# sourceMappingURL=styles.css.map */
