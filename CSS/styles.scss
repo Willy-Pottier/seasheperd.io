@@ -22,9 +22,9 @@ $text-font: 'Roboto Condensed', sans-serif;
     gap: 10px;
     flex-shrink: 0;
     border-radius: 10px;
-    border: 2px solid #FFE0BF;
-    background: #011932;
-    color: #FFE0BF;
+    border: 2px solid $button-color;
+    background: $primary-color;
+    color: $button-color;
     font-family: $text-font;
     font-size: 20px;
     font-style: normal;
@@ -34,14 +34,14 @@ $text-font: 'Roboto Condensed', sans-serif;
     cursor: pointer;
   
     &:hover {
-      background: #FFE0BF;
-      color: #011932;
+      background: $button-color;
+      color: $primary-color;
       box-shadow: 0px 3px 12px 0px rgba(255, 224, 191, 0.20);
     }
 
     &:focus {
-        background: #FFE0BF;
-        color: #011932;
+        background: $button-color;
+        color: $primary-color;
         box-shadow: 0px 3px 12px 0px rgba(255, 224, 191, 0.20);
     }
   }
@@ -117,12 +117,12 @@ $text-font: 'Roboto Condensed', sans-serif;
       
         p {
           margin: 0;
-          color: #FFE0BF;
+          color: $button-color;
         }
       
         &:hover {
           p {
-            color: #011932;
+            color: $primary-color;
           }
         }
     }
@@ -156,9 +156,9 @@ $text-font: 'Roboto Condensed', sans-serif;
     .containercards {
         display: flex;
         width: 100%;
-        height: 290px;
-        padding: 40px 5px 40px 25px;
-        align-items: flex-end;
+        height: auto;
+        padding: 8px 5px 40px 25px;
+        align-items: center;
         gap: 25px;
         flex-shrink: 0;
         overflow-x: scroll;
@@ -169,8 +169,8 @@ $text-font: 'Roboto Condensed', sans-serif;
         height: 210px;
         flex-shrink: 0;
         border-radius: 15px;
-        border: 2px solid #C0EEFF;
-        background: #011932;
+        border: 2px solid $secondary-color;
+        background: $primary-color;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -219,6 +219,18 @@ $text-font: 'Roboto Condensed', sans-serif;
 
     /*SECTION 3*/
 
+    #section3 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .containershark {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
     .video-shark {
         background-image: url(./assets/sharkYT.svg);
         background-size: cover;
@@ -228,7 +240,6 @@ $text-font: 'Roboto Condensed', sans-serif;
         flex-shrink: 0;
         border-radius: 15px;
         box-shadow: 0 10px 8px 5px rgba(0, 0, 0, 0.5);
-        align-items: center;
     }
 
     /*SECTION 4*/
@@ -252,11 +263,12 @@ $text-font: 'Roboto Condensed', sans-serif;
     /*SECTION 5*/
 
     .implicationcards {
-        display: inline-flex;
-        justify-content: center;
-        align-items: flex-end;
+        display: flex;
+        align-items: center;
         gap: 25px;
         overflow-x: scroll;
+        width: 100%;
+        height: auto;
     }
 
 }
