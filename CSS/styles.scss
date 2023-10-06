@@ -88,6 +88,11 @@ $text-font: 'Roboto Condensed', sans-serif;
         cursor: pointer;
     }
 
+    #closeSVG {
+        padding-right: 5%;
+        padding-top: 5%;
+    }
+
     .menucontainer {
         position: fixed;
         top: 0;
@@ -95,7 +100,7 @@ $text-font: 'Roboto Condensed', sans-serif;
         width: 100vw;
         height: 100vh;
         display: flex;
-        padding: 61px 24px 268px 24px;
+        padding-top: 10%;
         flex-direction: column;
         align-items: flex-end;
         gap: 89px;
@@ -120,6 +125,8 @@ $text-font: 'Roboto Condensed', sans-serif;
             a {
                 font-family: $title-font;
                 color: $primary-color;
+                font-size: 28px;
+                font-weight: 400;
             }
             }
         }
