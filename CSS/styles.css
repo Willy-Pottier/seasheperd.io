@@ -34,6 +34,9 @@ b {
     align-items: center;
     margin: 0 5% 0 5%;
   }
+  .navbarMenu {
+    display: none;
+  }
   svg {
     cursor: pointer;
   }
@@ -409,7 +412,7 @@ b {
     line-height: normal;
   }
 }
-@media (min-width: 577px) and (max-width: 1023px) {
+@media (min-width: 577px) and (max-width: 1279px) {
   * {
     text-decoration: none;
     list-style: none;
@@ -436,6 +439,9 @@ b {
     justify-content: space-between;
     align-items: center;
     margin: 0 5% 0 5%;
+  }
+  .navbarMenu {
+    display: none;
   }
   svg {
     cursor: pointer;
@@ -519,7 +525,7 @@ b {
   /*SECTION 5 - TABLET*/
   /*FOOTER - TABLET*/
 }
-@media (min-width: 577px) and (max-width: 1023px) and (max-width: 576px) {
+@media (min-width: 577px) and (max-width: 1279px) and (max-width: 576px) {
   .button {
     display: flex;
     width: 159px;
@@ -552,7 +558,7 @@ b {
     box-shadow: 0px 3px 12px 0px rgba(255, 224, 191, 0.2);
   }
 }
-@media (min-width: 577px) and (max-width: 1023px) and (min-width: 577px) and (max-width: 1023px) {
+@media (min-width: 577px) and (max-width: 1279px) and (min-width: 577px) and (max-width: 1023px) {
   .button {
     display: flex;
     width: 246px;
@@ -585,7 +591,7 @@ b {
     box-shadow: 0px 3px 12px 0px rgba(255, 224, 191, 0.2);
   }
 }
-@media (min-width: 577px) and (max-width: 1023px) and (min-width: 1024px) {
+@media (min-width: 577px) and (max-width: 1279px) and (min-width: 1024px) {
   .button {
     display: flex;
     width: 326px;
@@ -618,7 +624,7 @@ b {
     box-shadow: 0px 3px 12px 0px rgba(255, 224, 191, 0.2);
   }
 }
-@media (min-width: 577px) and (max-width: 1023px) {
+@media (min-width: 577px) and (max-width: 1279px) {
   .button p {
     margin: 0;
     color: #FFE0BF;
@@ -810,7 +816,7 @@ b {
   }
 }
 /*LAPTOP RULES*/
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media (min-width: 1280px) and (max-width: 1439px) {
   * {
     text-decoration: none;
     list-style: none;
@@ -834,9 +840,23 @@ b {
   /*HEADER LAPTOP*/
   #header-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: 0 5% 0 5%;
+    justify-content: space-between;
+    margin: 0 32px;
+  }
+  .navbarMenu {
+    display: flex;
+  }
+  .navbarMenu ul {
+    display: flex;
+    align-items: center;
+  }
+  .navbarMenu ul a {
+    font-family: "Dela Gothic One", cursive;
+    color: #C0EEFF;
+    font-size: 24px;
+    font-weight: 400;
+    padding-left: 1.5em;
   }
   svg {
     display: none;
@@ -847,26 +867,240 @@ b {
   .menucontainer {
     display: none;
   }
-  .navbar {
+  /*SECTION 1 - LAPTOP*/
+  #section1 {
     display: flex;
-    width: inherit;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
-  .navbar ul {
+  .container {
     display: flex;
-    width: 342px;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 0;
-    gap: 70px;
+    align-items: flex-start;
+    gap: 35px;
+    margin-top: 70px;
+    padding: 0 32px;
   }
-  .navbar ul a {
-    font-family: "Dela Gothic One", cursive;
-    color: #011932;
-    font-size: 28px;
+  .text h2 {
+    margin-top: 0;
+    font-size: 38px;
     font-weight: 400;
+  }
+  .text p {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .image-turtle {
+    background-image: url(./assets/turtlelaptop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 43.688em;
+    height: 16.5em;
+    flex-shrink: 0;
+  }
+  .button {
+    margin-top: 3em;
+  }
+  /*SECTION 2 - TABLET*/
+}
+@media (min-width: 1280px) and (max-width: 1439px) and (max-width: 576px) {
+  .button {
+    display: flex;
+    width: 159px;
+    height: 46px;
+    padding: 5px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid #FFE0BF;
+    background: #011932;
+    color: #FFE0BF;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: background-color ease-in-out 300ms, color ease 0.25ms;
+    cursor: pointer;
+  }
+  .button:hover {
+    background: #FFE0BF;
+    color: #011932;
+    box-shadow: 0px 3px 12px 0px rgba(255, 224, 191, 0.2);
+  }
+  .button:focus {
+    background: #FFE0BF;
+    color: #011932;
+    box-shadow: 0px 3px 12px 0px rgba(255, 224, 191, 0.2);
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) and (min-width: 577px) and (max-width: 1023px) {
+  .button {
+    display: flex;
+    width: 246px;
+    height: 45px;
+    padding: 15px 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 2px solid #FFE0BF;
+    background: #011932;
+    color: #FFE0BF;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: background-color ease-in-out 300ms, color ease 0.25ms;
+    cursor: pointer;
+  }
+  .button:hover {
+    background: #FFE0BF;
+    color: #011932;
+    box-shadow: 0px 3px 12px 0px rgba(255, 224, 191, 0.2);
+  }
+  .button:focus {
+    background: #FFE0BF;
+    color: #011932;
+    box-shadow: 0px 3px 12px 0px rgba(255, 224, 191, 0.2);
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) and (min-width: 1024px) {
+  .button {
+    display: flex;
+    width: 326px;
+    height: 65px;
+    padding: 15px 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 2px solid #FFE0BF;
+    background: #011932;
+    color: #FFE0BF;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: background-color ease-in-out 300ms, color ease 0.25ms;
+    cursor: pointer;
+  }
+  .button:hover {
+    background: #FFE0BF;
+    color: #011932;
+    box-shadow: 0px 3px 12px 0px rgba(255, 224, 191, 0.2);
+  }
+  .button:focus {
+    background: #FFE0BF;
+    color: #011932;
+    box-shadow: 0px 3px 12px 0px rgba(255, 224, 191, 0.2);
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .button p {
+    margin: 0;
+    color: #FFE0BF;
+  }
+  .button:hover p {
+    color: #011932;
+  }
+  .image-phoque {
+    background-image: url(./assets/phoquelaptop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 43.688em;
+    height: 16.5em;
+    flex-shrink: 0;
+  }
+  .image-baleine {
+    background-image: url(./assets/baleinelaptop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 43.75em;
+    height: 16.5em;
+    flex-shrink: 0;
+  }
+  .section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    overflow-x: hidden;
+    margin-top: 69px;
+    gap: 64px;
+  }
+  .section h2 {
+    padding-left: 25px;
+    font-size: 36px;
+    font-weight: 400;
+  }
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .textContainer p {
+    font-size: 24px;
+    font-weight: 500;
+    padding-left: 25px;
+  }
+  .containercards {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 8px 5px 40px 25px;
+    align-items: center;
+    gap: 25px;
+    flex-shrink: 0;
+    overflow-x: scroll;
+  }
+  .itemCard {
+    width: 250px;
+    height: 210px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 2px solid #C0EEFF;
+    background: #011932;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .itemCard p {
+    margin: 0;
+  }
+  .imgCard {
+    background-image: url(./assets/orques.svg);
+    width: 250px;
+    height: 100px;
+  }
+  .imgCard p {
+    color: #011932;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 8.5px;
+    margin-left: 8.5px;
+  }
+  .textCard {
+    margin-left: 18px;
+    margin-right: 18px;
+    width: 215px;
+    display: flex;
+    flex-direction: column;
+  }
+  .textCard .titletextCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 12px;
+  }
+  .textCard .paragraphCard {
+    display: flex;
+    flex-direction: column;
+    gap: 4.5px;
+    margin-top: 12px;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -157,6 +157,10 @@ $text-font: 'Roboto Condensed', sans-serif;
         margin: 0 5% 0 5%;
     }
 
+    .navbarMenu {
+        display: none;
+    }
+
     svg {
         cursor: pointer;
     }
@@ -495,7 +499,7 @@ $text-font: 'Roboto Condensed', sans-serif;
 
 // TABLETTE VERSION
 
-@media (min-width:577px) and (max-width:1023px) {
+@media (min-width:577px) and (max-width:1279px) {
     
     * {
         text-decoration: none;
@@ -528,6 +532,10 @@ $text-font: 'Roboto Condensed', sans-serif;
         justify-content: space-between;
         align-items: center;
         margin: 0 5% 0 5%;
+    }
+
+    .navbarMenu {
+        display: none;
     }
 
     svg {
@@ -862,7 +870,7 @@ $text-font: 'Roboto Condensed', sans-serif;
 
 /*LAPTOP RULES*/
 
-@media (min-width:1024px) and (max-width:1439px) {
+@media (min-width:1280px) and (max-width:1439px) {
 
     * {
         text-decoration: none;
@@ -892,9 +900,27 @@ $text-font: 'Roboto Condensed', sans-serif;
 
     #header-container {
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        margin: 0 5% 0 5%;
+        justify-content: space-between;
+        margin: 0 32px;
+    }
+
+    .navbarMenu {
+        display: flex;
+
+        ul {
+            display: flex;
+            align-items: center;
+
+            a {
+                font-family: $title-font;
+                color: $secondary-color;
+                font-size: 24px;
+                font-weight: 400;
+                padding-left: 1.5em;
+            }
+        }
+
     }
 
     svg {
@@ -909,30 +935,169 @@ $text-font: 'Roboto Condensed', sans-serif;
        display: none;
     }
 
-    .navbar {
 
+    /*SECTION 1 - LAPTOP*/
+
+    #section1 {
         display: flex;
-        width: inherit;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        
-        
-        ul {
-            display: flex;
-            width: 342px;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 0;
-            gap: 70px;
+    }
 
-        a {
-            font-family: $title-font;
-            color: $primary-color;
-            font-size: 28px;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 35px;
+        margin-top: 70px;
+        padding: 0 32px;
+    }
+
+    .text {
+        h2 {
+            margin-top: 0;
+            font-size: 38px;
             font-weight: 400;
-            }
+        }
+
+        p {
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+
+    .image-turtle {
+        background-image: url(./assets/turtlelaptop.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 43.688em;
+        height: 16.5em;
+        flex-shrink: 0;
+    }
+
+    .button {
+        @include button-style;
+
+        margin-top: 3em;
+      
+        p {
+          margin: 0;
+          color: $button-color;
+        }
+      
+        &:hover {
+          p {
+            color: $primary-color;
+          }
+        }
+    }
+
+    .image-phoque {
+        background-image: url(./assets/phoquelaptop.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 43.688em;
+        height: 16.5em;
+        flex-shrink: 0;
+    }
+
+    .image-baleine {
+        background-image: url(./assets/baleinelaptop.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 43.75em;
+        height: 16.5em;
+        flex-shrink: 0;
+    }
+
+     /*SECTION 2 - TABLET*/
+
+     .section {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        overflow-x: hidden;
+        margin-top: 69px;
+        gap: 64px;
+
+        h2 {
+            padding-left: 25px;
+            font-size: 36px;
+            font-weight: 400;
+        }
+    }
+
+    .textContainer {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            font-size: 24px;
+            font-weight: 500;
+            padding-left: 25px;
+        }
+    }
+
+    .containercards {
+        display: flex;
+        width: 100%;
+        height: auto;
+        padding: 8px 5px 40px 25px;
+        align-items: center;
+        gap: 25px;
+        flex-shrink: 0;
+        overflow-x: scroll;
+    }
+
+    .itemCard {
+        width: 250px;
+        height: 210px;
+        flex-shrink: 0;
+        border-radius: 15px;
+        border: 2px solid $secondary-color;
+        background: $primary-color;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .imgCard {
+        background-image: url(./assets/orques.svg);
+        width: 250px;
+        height: 100px;
+
+        p {
+            color: $primary-color;
+            font-weight: 700;
+            font-size: 20px;
+            margin-top: 8.5px;
+            margin-left: 8.5px;
+        }
+    }
+
+    .textCard {
+        margin-left: 18px;
+        margin-right: 18px;
+        width: 215px;
+        display: flex;
+        flex-direction: column;
+
+        .titletextCard {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 12px;
+        }
+
+        .paragraphCard {
+            display: flex;
+            flex-direction: column;
+            gap: 4.5px;
+            margin-top: 12px;
         }
     }
 }
