@@ -334,7 +334,7 @@ b {
     line-height: normal;
   }
 }
-@media (min-width: 577px) and (max-width: 1439px) {
+@media (min-width: 577px) and (max-width: 1023px) {
   * {
     text-decoration: none;
     list-style: none;
@@ -414,8 +414,8 @@ b {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    width: 29em;
-    gap: 113px;
+    width: 48em;
+    gap: 35px;
     margin-top: 70px;
   }
   .text h2 {
@@ -431,8 +431,8 @@ b {
     background-image: url(./assets/turtletablet.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 15.3em;
-    height: 25em;
+    width: 12.332em;
+    height: 20.052em;
     flex-shrink: 0;
   }
   .button {
@@ -475,19 +475,19 @@ b {
     color: #011932;
   }
   .image-phoque {
-    background-image: url(./assets/phoque.svg);
+    background-image: url(./assets/phoquetablet.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 183px;
-    height: 85px;
+    width: 29.627em;
+    height: 12.533em;
     flex-shrink: 0;
   }
   .image-baleine {
-    background-image: url(./assets/baleine.svg);
+    background-image: url(./assets/baleinetablet.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 183px;
-    height: 85px;
+    width: 29.627em;
+    height: 12.533em;
     flex-shrink: 0;
   }
 }/*# sourceMappingURL=styles.css.map */
