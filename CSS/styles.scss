@@ -835,7 +835,6 @@ $text-font: 'Roboto Condensed', sans-serif;
 
     .head-footer {
         display: flex;
-        width: 100%;
         margin-top: 69px;
         margin-left: 32px;
         margin-right: 32px;
@@ -914,6 +913,10 @@ $text-font: 'Roboto Condensed', sans-serif;
 
         .button {
             display: none;
+        }
+
+        .logo {
+            margin-right: 15%;
         }
     }
 
@@ -1186,7 +1189,6 @@ $text-font: 'Roboto Condensed', sans-serif;
 
     .head-footer {
         display: flex;
-        width: 100%;
         margin-top: 69px;
         margin-left: 32px;
         margin-right: 32px;
@@ -1262,9 +1264,23 @@ $text-font: 'Roboto Condensed', sans-serif;
         align-items: center;
         justify-content: space-between;
         margin: 0 32px;
+        margin-bottom: 152px;
 
         .button {
-            @include button-style();
+            // @include button-style();
+            margin-top: 0;
+            display: flex;
+            width: 230px;
+            height: 50px;
+            padding: 15px 25px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+
+        .logo {
+            margin-right: 15%;
         }
     }
 
@@ -1536,7 +1552,6 @@ $text-font: 'Roboto Condensed', sans-serif;
 
      .head-footer {
         display: flex;
-        width: 100%;
         margin-top: 69px;
         margin-left: 32px;
         margin-right: 32px;
