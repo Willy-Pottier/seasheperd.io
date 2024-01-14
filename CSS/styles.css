@@ -414,6 +414,81 @@ b {
     font-weight: 700;
     line-height: normal;
   }
+  #sectionEvent1 {
+    margin-left: 24px;
+    margin-top: 62px;
+    margin-bottom: 42px;
+  }
+  #sectionEvent2 {
+    width: 100vw;
+    height: 360px;
+  }
+  #sectionEvent2 .eventCard1 {
+    border-top: 1px solid #C0EEFF;
+    border-bottom: 1px solid #C0EEFF;
+    height: 90px;
+  }
+  #sectionEvent2 .eventCard1 .closeCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #sectionEvent2 .eventCard1 .closeCard .title {
+    margin-left: 24px;
+  }
+  #sectionEvent2 .eventCard1 .closeCard .title p {
+    color: #C0EEFF;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  #sectionEvent2 .eventCard1 .closeCard .title b {
+    color: #FFE0BF;
+  }
+  #sectionEvent2 .eventCard1 .closeCard .arrow {
+    background-image: url(./assets/arrow-custom.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 23.213px;
+    height: 23px;
+    flex-shrink: 0;
+    margin-top: 20px;
+    margin-right: 24px;
+  }
+  #sectionEvent2 .eventCard {
+    border-bottom: 1px solid #C0EEFF;
+    height: 90px;
+  }
+  #sectionEvent2 .eventCard .closeCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #sectionEvent2 .eventCard .closeCard .title {
+    margin-left: 24px;
+  }
+  #sectionEvent2 .eventCard .closeCard .title p {
+    color: #C0EEFF;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  #sectionEvent2 .eventCard .closeCard .title b {
+    color: #FFE0BF;
+  }
+  #sectionEvent2 .eventCard .closeCard .arrow {
+    background-image: url(./assets/arrow-custom.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 23.213px;
+    height: 23px;
+    flex-shrink: 0;
+    margin-top: 20px;
+    margin-right: 24px;
+  }
+  #newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media (min-width: 577px) and (max-width: 1279px) {
   * {

@@ -123,6 +123,8 @@ $text-font: 'Roboto Condensed', sans-serif;
   }
 }
 
+// MOBILE VERSION
+
 @media (max-width:576px) {
     * {
         text-decoration: none;
@@ -498,6 +500,95 @@ $text-font: 'Roboto Condensed', sans-serif;
                 line-height: normal;
             }
         }
+    }
+
+    #sectionEvent1 {
+        margin-left: 24px;
+        margin-top: 62px;
+        margin-bottom: 42px;
+    }
+
+    #sectionEvent2 {
+        width: 100vw;
+        height: 360px;
+
+        .eventCard1 {
+            border-top: 1px solid $secondary-color;
+            border-bottom: 1px solid $secondary-color;
+            height: 90px;
+
+            .closeCard {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .title {
+                    margin-left: 24px;
+
+                    p {
+                        color: $secondary-color;
+                        font-weight: 700;
+                        font-size: 16px;
+                    }
+
+                    b {
+                        color: $button-color;
+                    }
+                }
+
+                .arrow {
+                    background-image: url(./assets/arrow-custom.svg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 23.213px;
+                    height: 23px;
+                    flex-shrink: 0;
+                    margin-top: 20px;
+                    margin-right: 24px;
+                }
+            }
+        }
+        .eventCard {
+            border-bottom: 1px solid $secondary-color;
+            height: 90px;
+
+            .closeCard {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .title {
+                    margin-left: 24px;
+
+                    p {
+                        color: $secondary-color;
+                        font-weight: 700;
+                        font-size: 16px;
+                    }
+
+                    b {
+                        color: $button-color;
+                    }
+                }
+
+                .arrow {
+                    background-image: url(./assets/arrow-custom.svg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 23.213px;
+                    height: 23px;
+                    flex-shrink: 0;
+                    margin-top: 20px;
+                    margin-right: 24px;
+                }
+            }
+        }
+    }
+
+    #newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 

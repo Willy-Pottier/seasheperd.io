@@ -1,0 +1,19 @@
+<svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="26" height="25" fill="#1E1E1E"/>
+<g id="iPhone 14 - 11" clip-path="url(#clip0_1_4)">
+<rect width="390" height="1407" transform="translate(-342 -310)" fill="#011932"/>
+<g id="category event 1">
+<rect id="Rectangle 46" x="-342.5" y="-26.5" width="391" height="91" stroke="#C0EEFF"/>
+<g id="arrow custom">
+<path id="Line 1" d="M24.2129 1L1.21289 0.999998" stroke="#C0EEFF" stroke-width="2" stroke-linecap="round"/>
+<path id="Line 2" d="M24.2129 1L24.2129 24" stroke="#C0EEFF" stroke-width="2" stroke-linecap="round"/>
+<line id="Line 3" x1="23.2129" y1="2.41421" x2="2.4139" y2="23.2132" stroke="#C0EEFF" stroke-width="2" stroke-linecap="square"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1_4">
+<rect width="390" height="1407" fill="white" transform="translate(-342 -310)"/>
+</clipPath>
+</defs>
+</svg>
